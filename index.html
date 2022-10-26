@@ -1,0 +1,22 @@
+<!--
+	Q:- Write a program to convert Lowercase string to Uppercase and uppercase to lowercase;
+-->
+<script>
+  //input from user
+  var userInput = prompt("enter the Text");
+
+  //Process the inputs
+  function changeTransfrom(letter) {
+    if (letter >= "A" && letter <= "Z") {
+      return letter.toLowerCase();
+    } else if (letter >= "a" && letter <= "z") {
+      return letter.toUpperCase();
+    } else {
+      return letter;
+    }
+  }
+  //Output of it
+  for (let index = 0; index < userInput.length; index++) {
+    document.write(changeTransfrom(userInput[index]));
+  }
+</script>
